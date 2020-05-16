@@ -4,7 +4,7 @@ import Container from './Container'
 function Page(props) {
 	useEffect(() => {
 		document.title = `${props.title} | ComplexApp`
-	}, [])
+	})
 
 	return <Container wide={props.wide}>{props.children}</Container>
 }
