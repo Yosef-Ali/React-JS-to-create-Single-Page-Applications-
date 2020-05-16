@@ -66,3 +66,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+# React Complex App
+
+A tutorial for React JS to create Single Page Applications (SPA) using modern practices like Context, Reducer, Suspense and more
