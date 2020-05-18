@@ -10,7 +10,9 @@ function HeaderLogOut(props) {
 		try {
 			const response = await Axios.post('http://localhost:8080/login', { username, password })
 			if (response.data) {
-				console.log(response.data)
+				localStorage.setItem('complexappToken', response.data.token)
+				localStorage.setItem('complexappUserName', response.data.username)
+				localStorage.setItem('complexappAvatar', response.data.avatar)
 				props.setLoggedIn(true)
 			} else {
 				console.log('Incorrect Username/Password.')
@@ -30,9 +32,7 @@ function HeaderLogOut(props) {
 					<input onChange={(e) => setPassword(e.target.value)} name="password" className="form-control form-control-sm input-dark" type="password" placeholder="Password" />
 				</div>
 				<div className="col-md-auto">
-					<button onClick={() => props.setLoggedIn(false)} className="btn btn-success btn-sm">
-						Sign In
-					</button>
+					<button className="btn btn-success btn-sm">Sign In</button>
 				</div>
 			</div>
 		</form>
