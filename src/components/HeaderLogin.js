@@ -18,7 +18,7 @@ function HeaderLogin(props) {
 				<span className="chat-count-badge text-white"> </span>
 			</span>
 			<Link to="#" className="mr-2">
-				<img className="small-header-avatar" alt="avatar" src={localStorage.getItem('cpmplexappAvatar')} />
+				<img className="small-header-avatar" alt="avatar" src={localStorage.getItem('complexappAvatar')} />
 			</Link>
 			<Link className="btn btn-sm btn-success mr-2" to="/create-post">
 				Create Post
